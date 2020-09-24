@@ -18,4 +18,10 @@ body {
   font-style: normal;
   font-weight: normal;
   src: local('Museo Sans Rounded 500'), url('MuseoSansRounded500.woff') format('woff');
+  background: #000;
+}
+
+main{
+  margin: 0 8vw;
+  background: #FFF;
 }
