@@ -1,3 +1,10 @@
+@import "/assets/css/fonts.css";
+@import "/assets/css/brands.css";
+@import "/assets/css/headerMedNavbarBrands.css";
+@import "/assets/css/brands_background.css";
+@import "/assets/css/footer_frontpageBrands.css";
+@import "/assets/css//assets/css/brandbox.css";
+
 #brands{
     background: #000;
 }
