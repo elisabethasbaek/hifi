@@ -1,0 +1,32 @@
+@import "/assets/css/fonts.css"; /* FONTS */
+@import "/assets/css/headerMedNavbarBrands.css"; /* HEADER AND NAVBAR */
+@import "/assets/css/footer_frontpageBrands.css"; /* FOOTER */
+
+*{
+    margin: 0;
+}
+
+#error{
+    background: #000;
+    font-family: 'Museo Sans Rounded 900';
+    height: 100vh;
+}
+
+.error{
+    padding: 23.5vh 0;
+}
+
+.errorHeading{
+    color: #FFF;
+    text-align: center;
+    font-size: 10vw;
+    color: #A39161;
+    margin: 0;
+}
+
+.errorText{
+    text-align: center;
+    color: #FFF;
+    font-size: 1.7vw;
+    margin: 0;
+}
