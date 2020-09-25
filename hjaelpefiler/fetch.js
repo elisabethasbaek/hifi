@@ -2,7 +2,7 @@ function getSiteTitle(){
     return fetch("/assets/data/pages.json")
         .then(function(respone){
             if(!Response.ok){
-                alert{"Noget gik galt, prøv igen senere"};
+                alert("Noget gik galt, prøv igen senere");
                 return;
             }
 
