@@ -14,6 +14,11 @@ function getSingleProduct(){
     var warranty = document.querySelector(".additionalInfo__warranty");
     /*                             */
     
+    /* additional information box: */
+    var manufacturer = document.querySelector(".additionalInfo__manufacturer");
+    var warranty = document.querySelector(".additionalInfo__warranty");
+    /*                             */
+
     var url = new URLSearchParams(window.location.search);
 
     if (url.has("name")) {
