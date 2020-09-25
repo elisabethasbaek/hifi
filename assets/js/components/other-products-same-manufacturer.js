@@ -1,13 +1,11 @@
-/* "See other Marantz products"
-
-Ordet "Marantz" skal ændre sig alt efter hvilket produkt der vises og hvad det specifikke produkts "manufacturer" er i json dokumentet
-
-Linket skal føre til oversigten over alle produkter med det specifikke produkts "manufacturer" i json dokumentet*/
-
 
 function getSingleProduct(){
 
-    var otherProducts = document.querySelector("overviewSingleProduct__link");
+    var heading = document.querySelector(".overviewSingleProduct__heading");
+    var otherProducts = document.querySelector(".overviewSingleProduct__link");
+    var salePrice = document.querySelector(".overviewSingleProduct__price--strike");
+    var price = document.querySelector(".overviewSingleProduct__price");
+    
     var url = new URLSearchParams(window.location.search);
 
     if (url.has("name")) {
@@ -20,8 +18,12 @@ function getSingleProduct(){
 				    return product.name == url.get("name");
                 })
                 
+                heading.innerText = `${result.name}`;
+                salePrice.innerText = `${result.salePrice}`;
+                price.innerText = `${result.price}`;
+
                 otherProducts.innerText = `See other ${result.manufacturer} products`;
-                otherProducts.href = `singleProduct__page.html?manufacturer=${result.manufacturer}`;
+                otherProducts.href = `category-list.html?manufacturer=${result.manufacturer}`;
             })
     }
 }

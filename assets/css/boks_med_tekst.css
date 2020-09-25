@@ -28,6 +28,12 @@
     text-decoration: none;
 }
 
+.priceContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1vw;
+}
+
 .overviewSingleProduct__price{
     font-family: 'Museo Sans Rounded 300';
     font-weight: 300;
@@ -37,10 +43,13 @@
 }
 
 .overviewSingleProduct__price--strike{
+    font-family: 'Museo Sans Rounded 300';
+    font-weight: 300;
     text-decoration: line-through;
     color: #A0A0A0;
     font-size: 1rem;
     margin-right: 1rem;
+    line-height: 1.7rem;
 }
 
 .overviewSingleProduct__description{
